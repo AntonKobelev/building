@@ -1,13 +1,49 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.scheme {
+  height: 393px;
+  width: 738px;
+  margin: 0 auto;
+  position: relative;
+}
+.scheme svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 393px;
+  width: 738px;
+}
+.scheme polygon {
+  fill: #ffdba4;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.scheme-item {
+  position: absolute;
+  cursor: pointer;
+}
+.scheme-name {
+  font-weight: bold;
+  font-size: 10px;
+  text-align: center;
+  line-height: 13px;
+  white-space: pre-line;
+}
+.scheme-popup {
+  border: 1px solid #777;
+  padding: 10px;
+  width: 200px;
+  position: absolute;
+  font-size: 12px;
+  line-height: 14px;
+  background: #fff;
+  z-index: 9999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
+}
+
+.scheme polygon:hover,
+#hover {
+  fill: #ffc70b;
+}
+.scheme polygon.active {
+  fill: #ff8c0b !important;
 }
